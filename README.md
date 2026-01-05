@@ -301,28 +301,6 @@ pytest
 pytest --cov=crewai_fs_plus --cov-report=html
 ```
 
-## Publishing to PyPI
-
-1. Build the package:
-   ```bash
-   python -m build
-   ```
-
-2. Upload to TestPyPI first:
-   ```bash
-   twine upload --repository testpypi dist/*
-   ```
-
-3. Test the installation:
-   ```bash
-   pip install --index-url https://test.pypi.org/simple/ crewai-fs-plus
-   ```
-
-4. Upload to PyPI:
-   ```bash
-   twine upload dist/*
-   ```
-
 ## License
 
 MIT License - see [LICENSE](LICENSE) for details.
